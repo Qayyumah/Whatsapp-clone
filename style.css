@@ -6,7 +6,7 @@ body{
 .container{
     border: 1px solid black;
     background-color: whitesmoke;
-    width: 50%;
+    width: 100%;
     height: 100%;
     margin: auto;
 }
@@ -170,6 +170,137 @@ input{
 .right{
     margin-top: 50%;
     margin-right: 10px;
+}
+
+@media (min-width: 700px){
+    body{
+        background-color: teal;
+    }
+    .container{
+        border: 1px solid black;
+        background-color: whitesmoke;
+        width: 50%;
+        height: 100%;
+        margin: auto;
+    }
+    .head{
+        background-color: white;
+        /* margin: 10px 2px; */
+    }
+    
+    .h{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2px 20px;
+    }
+    .icons{
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    .h1{
+        margin-right: 30%;
+        color: black;
+        font-size: 14px;
+    }
+    .hove{
+        margin-top: 20px;
+    }
+    
+    .btns{
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 5px;
+        margin: 15px 10px;
+    }
+    .btns h3{
+        cursor: pointer;
+        color: black;
+        font-size: 20px;
+    }
+    
+    img{
+        width: 15%;
+        height: 15%;
+        border-radius: 50%;
+    }
+    
+    .main{
+        display: flex;
+        flex-direction: row;
+         align-items: center;
+         margin: 25px 20px;
+    }
+    .main:hover{
+        background-color: white;
+    }
+    .flex{
+       margin-left: 15px;
+        position: relative; 
+        width: 100%;
+        
+    }
+    
+    .text{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .flex .message-box h5{
+        font-size: 15px;
+        margin-top:-2px;
+    }
+    .content{
+        line-height: 5%;
+    }
+
+    #chat-container{
+        display: none;
+    }
+    
+    .chat-text{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main-ch{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        position: sticky;
+        top: 0;
+    }
+    .chat-icon{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .chat-input{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 50%;
+        margin-bottom: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    input{
+        width: 100%;
+        height: 35px;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+    .inbox{
+        display: flex;
+        margin: 20px 5px;
+        
+    }
+    .right{
+        margin-top: 50%;
+        margin-right: -70px;
+    }
 }
 
 @media (min-width: 900px){
