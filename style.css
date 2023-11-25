@@ -172,6 +172,15 @@ input{
     margin-right: 10px;
 }
 
+/*updates*/
+#upd{
+    display: none;
+}
+
+#update-container{
+    display: none;
+}
+
 @media (min-width: 700px){
     body{
         background-color: teal;
