@@ -1,5 +1,7 @@
 body{
     background-color: teal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
 }
 .container{
     border: 1px solid black;
@@ -11,10 +13,11 @@ body{
 .head{
     background-color: white;
     position: sticky;
-    /* margin-top: -20px; */
     top: 0;
     z-index: 1;
-    /* margin: 10px 2px; */
+}
+#hed{
+    display: none;
 }
 
 .h{
@@ -23,12 +26,11 @@ body{
     justify-content: space-between;
     align-items: center;
     margin: 2px 20px;
-    
 }
 .icons{
     display: flex;
     justify-content: space-evenly;
-    
+  
 }
 .h1{
     margin-right: 30%;
@@ -54,29 +56,55 @@ h3:hover{
     text-decoration-line: underline;
 }
 
+.calls{
+    display: none;
+}
 img{
-    width: 20%;
-    height: 20%;
+    width: 15%;
+    height: 15%;
     border-radius: 50%;
 }
 
 .main{
     display: flex;
     flex-direction: row;
-     align-items: center;
-     margin: 25px 10px;
+    align-items: center;
+    margin: 10px 10px;
+}
+
+.main:hover{
+    background-color: white;
+   
+}
+img:hover{
+    background-color: white;
+  
 }
 
 .flex{
    margin-left: 15px;
-    position: relative; 
-    width: 100%;
-    
+   position: relative; 
+   width: 100%;
 }
 
 .text{
     display: flex;
     justify-content: space-between;
+}
+.text-box{
+    line-height: 0%;
+    margin-left: 20px;
+}
+.text-b{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.message-box{
+    margin-top: 7px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .flex .message-box h5{
@@ -86,6 +114,63 @@ img{
 .content{
     line-height: 5%;
 }
+.first{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 10px;
+}
+
+#chat-container{
+    display: none;
+}
+
+.chat-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img{
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+}
+.main-ch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+.chat-icon{
+    display: flex;
+    justify-content: space-evenly;
+}
+.chat-input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50%;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+input{
+    width: 100%;
+    height: 35px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.inbox{
+    display: flex;
+    margin: 20px 5px;
+    
+}
+.right{
+    margin-top: 50%;
+    margin-right: 10px;
+}
 
 @media (min-width: 900px){
     body{
@@ -93,13 +178,13 @@ img{
     }
     .container{
         border: 1px solid black;
-        background-color: white;
+        background-color: whitesmoke;
         width: 30%;
         height: 100%;
         margin: auto;
     }
     .head{
-        background-color: whitesmoke;
+        background-color: white;
         /* margin: 10px 2px; */
     }
     
@@ -137,8 +222,8 @@ img{
     }
     
     img{
-        width: 20%;
-        height: 20%;
+        width: 15%;
+        height: 15%;
         border-radius: 50%;
     }
     
@@ -148,7 +233,9 @@ img{
          align-items: center;
          margin: 25px 20px;
     }
-    
+    .main:hover{
+        background-color: white;
+    }
     .flex{
        margin-left: 15px;
         position: relative; 
@@ -168,5 +255,52 @@ img{
     .content{
         line-height: 5%;
     }
+
+    #chat-container{
+        display: none;
+    }
+    
+    .chat-text{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main-ch{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        position: sticky;
+        top: 0;
+    }
+    .chat-icon{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .chat-input{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 50%;
+        margin-bottom: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    input{
+        width: 100%;
+        height: 35px;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+    .inbox{
+        display: flex;
+        margin: 20px 5px;
+        
+    }
+    .right{
+        margin-top: 50%;
+        margin-right: -70px;
+    }
+    
     
 }
